@@ -44,8 +44,8 @@ function on_exit {
 trap on_exit EXIT
 
 # Use environment variables VERSION and BRANCH, with defaults if not set
-version=${VERSION:-$(curl -s https://api.github.com/repos/twentyhq/twenty/releases/latest | grep '"tag_name":' | cut -d '"' -f 4)}
-branch=${BRANCH:-main}
+# version=${VERSION:-$(curl -s https://api.github.com/repos/twentyhq/twenty/releases/latest | grep '"tag_name":' | cut -d '"' -f 4)}
+branch=${BRANCH:-feature/template_campaign}
 
 echo "🚀 Using version $version and branch $branch"
 
