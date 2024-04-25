@@ -1,7 +1,7 @@
 version: "3.9"
 services:
   twenty-dev:
-    image: https://hub.docker.com/r/twentycrm/twenty
+    image: twentycrm/twenty
     build: 
       context: ../../..
       dockerfile: ./packages/twenty-docker/dev/twenty-dev/Dockerfile
