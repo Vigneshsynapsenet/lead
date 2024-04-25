@@ -2,8 +2,9 @@ version: "3.9"
 name: twenty
 
 services:
-  server:
-    image: twentycrm/twenty:${TAG}
+    build:
+      context: .
+      dockerfile: Dockerfile
     volumes:
       - server-local-data:/app/${STORAGE_LOCAL_PATH:-.local-storage}
     ports:
