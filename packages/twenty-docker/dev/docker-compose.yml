@@ -1,6 +1,7 @@
 version: "3.9"
 services:
   twenty-dev:
+    image: https://hub.docker.com/r/twentycrm/twenty
     build: 
       context: ../../..
       dockerfile: ./packages/twenty-docker/dev/twenty-dev/Dockerfile
@@ -37,4 +38,6 @@ volumes:
   twenty_dev_node_modules_front:
   twenty_dev_node_modules_server:
   twenty_dev_node_modules_website:
+
+
 
